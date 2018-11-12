@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="@dimen/padding_little">
+
+    <ImageView
+        android:id="@+id/chat_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:padding="4dp"/>
+
+    <ImageView
+        android:id="@+id/chat_image_tip"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/circle"
+        android:layout_alignRight="@+id/chat_image"/>
+
+    <TextView
+        android:id="@+id/chat_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/chat_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        style="@style/item_title_text"
+        android:text="标题"/>
+
+    <TextView
+        android:id="@+id/chat_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lines="1"
+        android:ellipsize="end"
+        android:layout_toRightOf="@+id/chat_image"
+        android:layout_alignParentBottom="true"
+        style="@style/item_little_title_text"
+        android:layout_marginBottom="8dp"
+        android:text="内容"/>
+
+    <TextView
+        android:id="@+id/chat_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        style="@style/item_little_title_text"
+        android:layout_alignBottom="@+id/chat_head"
+        android:text="3:30 PM"/>
+
+    <ImageView
+        android:id="@+id/chat_is_notification"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignTop="@+id/chat_cont"
+        android:src="@drawable/notify"/>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WeChat</string>
+    <string name="chats">chats</string>
+    <string name="contacts">contacts</string>
+    <string name="discover">discover</string>
+    <string name="me">me</string>
+
+    <string name="new_chats">new chats</string>
+    <string name="add_contacts">add contacts</string>
+    <string name="scan">scan</string>
+    <string name="money">money</string>
+    <string name="help_feed">help &amp; feedback</string>
+
+    <string name="wallet">Wallet</string>
+    <string name="favorites">Favorites</string>
+    <string name="my_posts">My Posts</string>
+    <string name="cards_offers">Cards &amp; Offers</string>
+    <string name="sticker_gallery">Sticker &amp; Gallery</string>
+    <string name="settings">Settings</string>
+</resources>

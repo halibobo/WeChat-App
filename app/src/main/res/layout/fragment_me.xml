@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+      <include layout="@layout/space_common"/>
+      
+      <android.support.constraint.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@color/colorWhite"
+          android:padding="8dp">
+
+         <ImageView
+             android:id="@+id/imageViewAvatar"
+             android:layout_width="60dp"
+             android:layout_height="60dp"
+             android:layout_centerVertical="true"
+             app:layout_constraintLeft_toLeftOf="parent"
+             android:layout_marginLeft="8dp"
+             android:src="@drawable/logo"/>
+
+         <TextView
+             android:id="@+id/textNickName"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentTop="true"
+             android:layout_marginLeft="20dp"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintLeft_toRightOf="@+id/imageViewAvatar"
+             android:layout_marginTop="8dp"
+             style="@style/item_title_text"
+             android:text="苏小凡"
+             />
+
+         <TextView
+             android:id="@+id/textId"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintLeft_toLeftOf="@+id/textNickName"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:layout_marginBottom="8dp"
+             style="@style/item_little_title_text"
+             android:text="ID：hello world"
+             android:layout_alignLeft="@+id/textNickName"/>
+
+         <ImageView
+             android:id="@+id/imageCode"
+             android:layout_width="40dp"
+             android:layout_height="40dp"
+             android:layout_marginRight="10dp"
+             android:padding="5dp"
+             android:src="@drawable/erweima"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+              />
+
+      </android.support.constraint.ConstraintLayout>
+
+      <include layout="@layout/space_common"/>
+
+      <dahei.me.xiaobai.widget.ItemBarLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_item_height"
+          app:ibl_image="@drawable/wallets"
+          app:ibl_tabText="@string/wallet"/>
+
+      <include layout="@layout/space_common"/>
+
+      <dahei.me.xiaobai.widget.ItemBarLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_item_height"
+          app:ibl_image="@drawable/sticker"
+          app:ibl_tabText="@string/favorites"
+          app:ibl_line="true"/>
+      <dahei.me.xiaobai.widget.ItemBarLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_item_height"
+          app:ibl_image="@drawable/posts"
+          app:ibl_tabText="@string/my_posts"
+          app:ibl_line="true"/>
+      <dahei.me.xiaobai.widget.ItemBarLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_item_height"
+          app:ibl_image="@drawable/card"
+          app:ibl_tabText="@string/cards_offers"
+          app:ibl_line="true"/>
+
+      <dahei.me.xiaobai.widget.ItemBarLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_item_height"
+          app:ibl_image="@drawable/smile"
+          app:ibl_tabText="@string/sticker_gallery"/>
+
+      <include layout="@layout/space_common"/>
+
+      <dahei.me.xiaobai.widget.ItemBarLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/layout_item_height"
+          app:ibl_image="@drawable/setting"
+          app:ibl_tabText="@string/settings"/>
+
+   </LinearLayout>
+</ScrollView>

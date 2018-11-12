@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <dahei.me.alphatabview.TabIndicatorView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <dahei.me.alphatabview.TabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@drawable/home_normal"
+            app:av_tabIconSelected="@drawable/home_selected"
+            app:av_tabText="@string/chats"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="@color/colorMainNormal"
+            app:av_textColorSelected="@color/colorMainSelected"
+            />
+
+        <dahei.me.alphatabview.TabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@drawable/category_normal"
+            app:av_tabIconSelected="@drawable/category_selected"
+            app:av_tabText="@string/contacts"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="@color/colorMainNormal"
+            app:av_textColorSelected="@color/colorMainSelected"
+            />
+
+        <dahei.me.alphatabview.TabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@drawable/service_normal"
+            app:av_tabIconSelected="@drawable/service_selected"
+            app:av_tabText="@string/discover"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="@color/colorMainNormal"
+            app:av_textColorSelected="@color/colorMainSelected"
+            />
+
+        <dahei.me.alphatabview.TabView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:av_tabIconNormal="@drawable/mine_normal"
+            app:av_tabIconSelected="@drawable/mine_selected"
+            app:av_tabText="@string/me"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="@color/colorMainNormal"
+            app:av_textColorSelected="@color/colorMainSelected"
+            />
+
+    </dahei.me.alphatabview.TabIndicatorView>

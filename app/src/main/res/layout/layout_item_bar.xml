@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/colorWhite">
+
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="@dimen/padding_little"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imageLogo"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/padding_little"
+        style="@style/item_title_text"
+        android:lines="1"
+        android:ellipsize="end"
+        android:text="你哈"/>
+
+
+    <View
+        android:id="@+id/lineBottom"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorMainNormal"/>
+
+</RelativeLayout>

@@ -13,9 +13,10 @@
       <include layout="@layout/space_common"/>
       
       <android.support.constraint.ConstraintLayout
+          android:id="@+id/layoutInformation"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:background="@color/colorWhite"
+          android:background="@drawable/common_white_btn_selector"
           android:padding="8dp">
 
          <ImageView
@@ -68,6 +69,7 @@
       <include layout="@layout/space_common"/>
 
       <dahei.me.xiaobai.widget.ItemBarLayout
+          android:id="@+id/itemWallet"
           android:layout_width="match_parent"
           android:layout_height="@dimen/layout_item_height"
           app:ibl_image="@drawable/wallets"
@@ -76,18 +78,21 @@
       <include layout="@layout/space_common"/>
 
       <dahei.me.xiaobai.widget.ItemBarLayout
+          android:id="@+id/itemFavorite"
           android:layout_width="match_parent"
           android:layout_height="@dimen/layout_item_height"
           app:ibl_image="@drawable/sticker"
           app:ibl_tabText="@string/favorites"
           app:ibl_line="true"/>
       <dahei.me.xiaobai.widget.ItemBarLayout
+          android:id="@+id/itemPosts"
           android:layout_width="match_parent"
           android:layout_height="@dimen/layout_item_height"
           app:ibl_image="@drawable/posts"
           app:ibl_tabText="@string/my_posts"
           app:ibl_line="true"/>
       <dahei.me.xiaobai.widget.ItemBarLayout
+          android:id="@+id/itemCards"
           android:layout_width="match_parent"
           android:layout_height="@dimen/layout_item_height"
           app:ibl_image="@drawable/card"
@@ -95,6 +100,7 @@
           app:ibl_line="true"/>
 
       <dahei.me.xiaobai.widget.ItemBarLayout
+          android:id="@+id/itemSticker"
           android:layout_width="match_parent"
           android:layout_height="@dimen/layout_item_height"
           app:ibl_image="@drawable/smile"
@@ -103,6 +109,7 @@
       <include layout="@layout/space_common"/>
 
       <dahei.me.xiaobai.widget.ItemBarLayout
+          android:id="@+id/itemSetting"
           android:layout_width="match_parent"
           android:layout_height="@dimen/layout_item_height"
           app:ibl_image="@drawable/setting"

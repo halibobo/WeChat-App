@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:background="@color/colorWhite">
+    android:background="@drawable/common_white_btn_selector">
 
 
     <ImageView
@@ -36,5 +36,14 @@
         android:layout_height="1px"
         android:layout_alignParentBottom="true"
         android:background="@color/colorMainNormal"/>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/padding_little"
+        android:layout_width="30dp"
+        android:layout_height="30dp">
+
+    </LinearLayout>
 
 </RelativeLayout>

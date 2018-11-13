@@ -3,6 +3,7 @@ package dahei.me.xiaobai.widget;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.BitmapDrawable;
+import android.support.annotation.DrawableRes;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.ImageView;
@@ -50,10 +51,29 @@ public class ItemBarLayout extends RelativeLayout {
         t.recycle();
     }
 
+
     private void initView(Context context) {
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.layout_item_bar, this);
         textView = findViewById(R.id.textTitle);
         imageView = findViewById(R.id.imageLogo);
+    }
+
+    public void setData(@DrawableRes int imageId, String data) {
+        imageView.setImageResource(imageId);
+        textView.setText(data);
+    }
+
+    public void setData(String name, String data) {
+        setData(name, data, false);
+    }
+
+    public void setData(String name, String data,boolean hasLine) {
+        int imageId = getResources().getIdentifier(name, "drawable", getContext().getPackageName());
+        if(imageId > 0) {
+            imageView.setImageResource(imageId);
+        }
+        textView.setText(data);
+        findViewById(R.id.lineBottom).setVisibility(hasLine ? VISIBLE : GONE);
     }
 }

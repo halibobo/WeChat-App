@@ -47,12 +47,12 @@ public class DiscoverFragment extends BaseFragment {
 
     private void updateView() {
         if (discoverItems.isEmpty()) {
-            discoverItems.add(new DiscoverItem("posts", "Moments",0));
-            discoverItems.add(new DiscoverItem("posts", "Mini Programs",1));
-            discoverItems.add(new DiscoverItem("posts", "Mini Programs",2));
-            discoverItems.add(new DiscoverItem("posts", "Mini Programs",2));
-            discoverItems.add(new DiscoverItem("posts", "Mini Programs",2));
-            discoverItems.add(new DiscoverItem("posts", "Mini Programs",3));
+            discoverItems.add(new DiscoverItem("friends", getString(R.string.moments),0));
+            discoverItems.add(new DiscoverItem("scan",  getString(R.string.scans),1));
+            discoverItems.add(new DiscoverItem("shake",  getString(R.string.shake),1));
+            discoverItems.add(new DiscoverItem("nearby",  getString(R.string.nearby),2));
+            discoverItems.add(new DiscoverItem("piaoliu",  getString(R.string.message_in_bottle),2));
+            discoverItems.add(new DiscoverItem("miniprogram",  getString(R.string.mini_programs),3));
         }
         refreshView();
     }

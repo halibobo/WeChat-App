@@ -37,13 +37,5 @@
         android:layout_alignParentBottom="true"
         android:background="@color/colorMainNormal"/>
 
-    <LinearLayout
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="@dimen/padding_little"
-        android:layout_width="30dp"
-        android:layout_height="30dp">
-
-    </LinearLayout>
 
 </RelativeLayout>

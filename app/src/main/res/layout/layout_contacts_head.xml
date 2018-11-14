@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <dahei.me.xiaobai.widget.ItemBarLayout
+        android:id="@+id/newFriends"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_item_height"
+        app:ibl_image="@drawable/sticker"
+        app:ibl_tabText="@string/favorites"
+        app:ibl_line="true"/>
+    <dahei.me.xiaobai.widget.ItemBarLayout
+        android:id="@+id/groupChats"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_item_height"
+        app:ibl_image="@drawable/sticker"
+        app:ibl_tabText="@string/favorites"
+        app:ibl_line="true"/>
+    <dahei.me.xiaobai.widget.ItemBarLayout
+        android:id="@+id/tags"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_item_height"
+        app:ibl_image="@drawable/sticker"
+        app:ibl_tabText="@string/favorites"
+        app:ibl_line="true"/>
+    <dahei.me.xiaobai.widget.ItemBarLayout
+        android:id="@+id/officialAccounts"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_item_height"
+        app:ibl_image="@drawable/sticker"
+        app:ibl_tabText="@string/favorites"
+        app:ibl_line="true"/>
+
+</LinearLayout>
